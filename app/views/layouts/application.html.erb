@@ -29,15 +29,18 @@
   </div>
 </nav>
 <div class="top-padding"></div>
-<div class="container">
-  <%= yield %>
+<div class="container fill-height" id="app-window">
+  <div class="row fill-height">
+    <div class ="col-sm-12 col-md-12 col-lg-12">
+      <%= yield %>
+    </div>
+  </div>
 </div>
 <div class="footer-padding"></div>
 <footer class="container-fluid">
   <div class="footer-copyright">
     &copy; 2016 Tyler Nixon
   </div>
-
 </footer>
 </body>
 </html>

@@ -1,4 +1,7 @@
+html { height: 100% }
+
 body {
+  height: 100%;
   color: #E4FFFF;
   /* Gradient from http://uigradients.com */
   background: #4B79A1; /* fallback for old browsers */
@@ -6,6 +9,15 @@ body {
   background: linear-gradient(to left, #4B79A1 , #283E51); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .top-padding { padding-top: 50px; }
+
+.fill-height {
+  min-height: 89.72%;
+}
+
+#app-window {
+  width: 98%;
+  background-color: #FFFEFE;
+}
 
 .footer-padding {
   padding-top: 30px;
