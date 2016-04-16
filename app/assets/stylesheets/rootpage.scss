@@ -5,8 +5,23 @@ body {
 }
 .top-padding { padding-top: 50px; }
 
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  padding-top: .75em;
+  font-weight: bold;
+  &:hover {
+    color: darkgray;
+    text-decoration: none;
+  }
+}
+
 #app-window {
-  width: 98%;
+  width: 97%;
 }
 
 .footer-padding {
@@ -23,10 +38,17 @@ footer {
   color: #777;
   background: #f8f8f8;
   border-top: 1px solid #e7e7e7;
+  .footer-copyright {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    #copyright {
+      color: darkgray;
+      text-decoration: none;
+      &:hover {
+        color: darkslategray;
+      }
+    }
+  }
 }
 
-.footer-copyright {
-  float: right;
-  margin-top: 5px;
-  margin-right: 20px;
-}
