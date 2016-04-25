@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.products-margin {
+  margin-top: 20px;
+}
+
 .products-box {
   textarea, input {
     color: #323232;
@@ -11,8 +15,16 @@
 .product-layout {
   color: #010609;
   background-color: #FFFEFE;
-  border: 2px solid #000;
+  border: 2px solid #8d8d8d;
   border-radius: 15px;
+}
+
+.product-header {
+  min-height: 80px;
+}
+
+.product-body {
+  min-height: 280px;
 }
 
 /* Typography */
