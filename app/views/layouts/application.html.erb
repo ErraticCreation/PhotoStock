@@ -6,6 +6,9 @@
   <body>
     <%= render '/layouts/header' %>
     <div class="top-padding"></div>
+    <% if notice %>
+      <p class="text-center" id="notice"><%= notice %></p>
+    <% end %>
     <div class="container fill-height">
       <div class="row fill-height">
           <%= yield %>
