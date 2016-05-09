@@ -1,0 +1,13 @@
+<div class="col-md-12 product-layout text-center">
+  <header class="page-header">
+    <h3><%= @product.name %></h3>
+  </header>
+  <article class="product-body">
+    <%= image_tag(@product.image_url, class: "img-responsive") %>
+    <header class="product-header">
+      <h4><%= @product.name %></h4>
+    </header>
+    <p><%= @product.description %></p>
+  </article>
+  <br>
+</div>

@@ -13,7 +13,11 @@
 }
 
 .product-layout {
-  color: #010609;
+  a {
+    text-decoration: none;
+    color: #010609;
+  }
+
   background-color: #FFFEFE;
 }
 
