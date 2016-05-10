@@ -1,6 +1,8 @@
 <% provide(:title, "Products") %>
 <div class="container-fluid products-box text-center">
-  <h1 class="text-center">Available Products</h1>
+  <header class="page-header">
+    <h1 class="text-center">Available Products</h1>
+  </header>
   <%= render @products %>
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <%= link_to 'New Product', new_product_path %>

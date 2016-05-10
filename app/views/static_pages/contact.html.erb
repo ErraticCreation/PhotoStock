@@ -1,3 +1,28 @@
 <% provide(:title, "Contact") %>
-<h1 class="text-center">Contact Us</h1>
-<p class="text-center">More Placeholders!! Mustache intelligentsia waistcoat, portland vegan dreamcatcher biodiesel banh mi next level lo-fi kinfolk seitan knausgaard occupy plaid. Fanny pack art party literally mustache, 3 wolf moon gluten-free humblebrag lumbersexual keffiyeh squid tote bag kale chips swag neutra. Plaid typewriter sartorial, crucifix poutine hoodie dreamcatcher kickstarter chillwave green juice. Vinyl small batch hella keytar, mustache bespoke direct trade offal locavore tofu godard asymmetrical. Bicycle rights mlkshk vice, art party listicle bushwick literally craft beer sriracha humblebrag. Kale chips scenester vice, hoodie man bun kombucha knausgaard polaroid crucifix. Tumblr four dollar toast fixie, everyday carry organic lomo franzen tote bag.</p>
+<header class="page-header">
+  <h1 class="text-center">Contact Us<br>
+    <small class="h5">Leave us a message.</small>
+  </h1>
+  <%= flash[:notice] %>
+</header>
+<article>
+  <%= form_tag("/static_pages/thank_you") do %>
+      <div class="row text-center">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+          <div class="form-group">
+            <%= label_tag :name, "Name" %>
+            <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+          </div>
+          <div class="form-group">
+            <%= label_tag :email, "Email Address" %>
+            <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+          </div>
+          <div class="form-group">
+            <%= label_tag :message, "Message" %>
+            <%= text_area_tag :message, nil, class: "form-control", rows: "5", placeholder: "Enter Message" %>
+          </div>
+          <%= submit_tag "Send", class: "btn btn-default" %>
+        </div>
+      </div>
+  <% end %>
+</article>

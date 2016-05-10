@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :products
   resources :orders, only: [:index, :show, :new, :create, :destroy]
 
+  post 'static_pages/thank_you'
+
   get 'static_pages/about'
 
   get 'static_pages/contact'
