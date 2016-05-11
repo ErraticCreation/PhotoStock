@@ -6,9 +6,7 @@
   <body>
     <%= render '/layouts/navbar' %>
     <div class="top-padding"></div>
-    <% if notice %>
-      <p class="text-center" id="notice"><%= notice %></p>
-    <% end %>
+    <%= render '/layouts/messages' %>
     <div class="container fill-height">
       <div class="row fill-height">
           <%= yield %>
