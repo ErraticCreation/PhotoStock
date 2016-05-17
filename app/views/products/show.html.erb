@@ -3,7 +3,7 @@ text-center">
   <%= render 'shared/product' %>
   <div>
     <br>
-    <%= link_to 'Edit', edit_product_path(@product) %> |
-    <%= link_to 'Back', products_path %>
+    <%= link_to '<span class="glyphicon glyphicon-pencil"></span>Edit'.html_safe, edit_product_path(@product) %> |
+    <%= link_to '<span class="glyphicon glyphicon-arrow-left"></span>Back'.html_safe, products_path %>
   </div>
 </div>
