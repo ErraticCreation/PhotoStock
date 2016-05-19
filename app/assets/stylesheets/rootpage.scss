@@ -61,7 +61,15 @@ footer {
 
 /* Typography */
 
-a { text-decoration: none }
+a {
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: #666;
+  }
+  text-decoration: none;
+  color: #323232;
+}
 
 h1,
 h2,

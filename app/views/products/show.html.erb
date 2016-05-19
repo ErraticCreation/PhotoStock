@@ -6,7 +6,10 @@ text-center">
   <%= will_paginate @comments, class: "col-xs-12 col-sm-12 col-md-12 col-lg-12 pagination-style text-center" %>
   <div>
     <br>
-    <%= link_to '<span class="glyphicon glyphicon-pencil"></span>Edit'.html_safe, edit_product_path(@product) %> |
-    <%= link_to '<span class="glyphicon glyphicon-arrow-left"></span>Back'.html_safe, products_path %>
+    <% if signed_in? && current_user.admin? %>
+    <%= link_to '<span class="glyphicon glyphicon-pencil"></span>Edit'.html_safe, edit_product_path(@product), class:
+        "btn btn-default" %> |
+    <% end %>
+    <%= link_to '<span class="glyphicon glyphicon-arrow-left"></span> Back to Products Listing'.html_safe, products_path, class: "btn btn-default" %>
   </div>
 </div>
