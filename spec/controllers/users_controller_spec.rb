@@ -4,12 +4,17 @@ describe UsersController, :type => :controller do
   context "GET #show" do
 
     before do
-      @user = User.create!(first_name: "Sample", last_name: "User", email: "example@example.com", password: "Password1", password_confirmation: "Password1")
-      @second_user = User.create!(first_name: "Second", last_name: "User", email: "secondexample@example.com", password: "Password1", password_confirmation: "Password1")
+      # @user = User.create!(first_name: "Sample", last_name: "User", email: "example@example.com", password: "Password1", password_confirmation: "Password1")
+      # @second_user = User.create!(first_name: "Second", last_name: "User", email: "secondexample@example.com", password: "Password1", password_confirmation: "Password1")
+      @user = FactoryGirl.create(:user)
+      @second_user = FactoryGirl.create(:user)
+      @admin = FactoryGirl.create(:admin)
     end
 
     describe "GET #show" do
+
       context "User is logged in" do
+
         before do
           sign_in @user
         end
@@ -27,11 +32,14 @@ describe UsersController, :type => :controller do
       end
 
       context "No User is logged in" do
+
         it "redirects to login" do
           get :show, id: @user.id
           expect(response).to redirect_to(root_path)
         end
+
       end
+
     end
 
   end
