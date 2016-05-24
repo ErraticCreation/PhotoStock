@@ -8,7 +8,9 @@
       <h4><%= @product.name %></h4>
     </header>
     <p><%= @product.description %></p>
+    <p><%= number_to_currency(@product.price, precision: 2) %></p>
     <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
   </article>
+  <%= render 'shared/stripe_checkout_button' %>
   <br>
 </div>

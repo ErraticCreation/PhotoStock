@@ -5,9 +5,11 @@
       <%= image_tag(product.image_url, class: "img-responsive") %>
       <header class="product-header">
         <h4><%= product.name %></h4>
+        <p><small><%= number_to_currency(product.price, precision: 2) %></small></p>
       </header>
       <p><%= product.description %></p>
     </article>
+    <p>Average Rating: <div class="rated" data-score="<%= product.average_rating %>"></div> </p>
     <% if signed_in? && current_user.admin? %>
     <div>
       <br>

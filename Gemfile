@@ -12,6 +12,7 @@ gem 'puma'
 gem 'devise'
 gem 'cancancan'
 gem 'will_paginate'
+gem 'stripe'
 
 group :development, :test do
   gem 'byebug'
