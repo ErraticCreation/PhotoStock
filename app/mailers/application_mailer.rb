@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "contact@samplestoreapp.com"
+  default from: "contact@sample-store-app-tsn.herokuapp.com"
   layout 'mailer'
 end

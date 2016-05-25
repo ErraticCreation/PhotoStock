@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: "contact@samplestoreapp.com"
+  default from: "contact@sample-store-app-tsn.herokuapp.com"
 
   def contact_form(email, name, message)
   @message = message

@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   post 'static_pages/thank_you'
 
+  post 'payments/create'
+
   get 'static_pages/about'
 
   get 'static_pages/contact'
