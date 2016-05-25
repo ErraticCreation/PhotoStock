@@ -4,6 +4,5 @@
   data-image="<% image_url("placeholder.png") %>"
   data-name="<%= full_title("") %>"
   data-description="<%= @product.name %>"
-  data-amount="<%= number_with_precision(@product.price, precision: 2, separator: "") %>"
-  <% hidden_field_tag(:product_id => @product.id) %>>
+  data-amount="<%= number_with_precision(@product.price, precision: 2, separator: "") %>">
 </script>

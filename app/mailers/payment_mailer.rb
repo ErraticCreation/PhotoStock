@@ -1,8 +1,7 @@
 class PaymentMailer < ApplicationMailer
 
-  def order_thank_you(email, name, product, order, total)
+  def order_thank_you(email, product, order, total)
     @email = email
-    @name = name
     @product = product
     @order = order
     @total = total

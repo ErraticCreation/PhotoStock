@@ -1,13 +1,13 @@
 class PaymentsController < ApplicationController
 
   def create
-    @product = params[:product_id]
+    @product = Product.find(params[:product_id])
     @user = current_user
     token = params[:stripeToken]
     # Create the charge on Stripe's servers -this will charge the user's card
     begin
       charge = Stripe::Charge.create(
-        :amount => number_with_precision(@product.price, precision: 2, separator: "").to_i, #Amount in cents
+        :amount => (@product.price*100).to_i, #Amount in cents
         :currency => "usd",
         :source => token,
         :description => params[:stripeEmail]
@@ -18,7 +18,7 @@ class PaymentsController < ApplicationController
         new_order.save
         if new_order.save!
           @order = new_order.id
-          PaymentMailer.create_order_thank_you(@user.email, @user.name, @product.name, @order, (@product.price).to_s).deliver_now
+          PaymentMailer.order_thank_you(@user.email, @product.name, @order, (@product.price).to_s).deliver_now
         end
       end
     rescue Stripe::CardError => e
