@@ -10,13 +10,13 @@ Rails.application.routes.draw do
 
   post 'payments/create'
 
-  get 'static_pages/about'
+  get '/about' => 'static_pages#about'
 
-  get 'static_pages/contact'
+  get '/contact' => 'static_pages#contact'
 
-  get 'static_pages/index'
+  # get 'static_pages/index'
 
-  get 'static_pages/landing_page'
+  get '/landing' => 'static_pages#landing_page'
 
   root 'static_pages#landing_page'
   # The priority is based upon order of creation: first created -> highest priority.
