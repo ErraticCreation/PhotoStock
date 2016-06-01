@@ -3,7 +3,7 @@
     <h3><%= @product.name %></h3>
   </header>
   <article class="product-body">
-    <%= image_tag(@product.image_url, class: "img-responsive") %>
+    <%= image_tag(@product.image_url, class: "img-zoom img-responsive", data_zoom_image: @product.image_url ) %>
     <header class="product-header">
       <h4><%= @product.name %></h4>
     </header>

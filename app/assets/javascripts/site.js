@@ -1,5 +1,6 @@
 var ready;
 ready = function(){
+  // Initialize Raty
   $('.rating').raty( { path: '/assets', scoreName: 'comment[rating]' } );
   $('.rated').raty( { path: '/assets',
     readOnly: true,
@@ -7,6 +8,8 @@ ready = function(){
       return $(this).attr('data-score');
     }
   } );
+  // Initialize elveateZoom
+  $(".img-zoom").elevateZoom();
 }
 
 // turbolinks compatible document ready function which still functions upon page refresh
