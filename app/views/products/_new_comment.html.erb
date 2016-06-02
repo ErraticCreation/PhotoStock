@@ -2,7 +2,7 @@
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <h4>Add a review:</h4>
     <div class="form-group">
-      <%= form_for([@product, @product.comments.build]) do |f| %>
+      <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
           <p>
             <%= f.label :body, "Comments" %><br>
             <%= f.text_area :body, rows: "5", class: "form-control" %>
