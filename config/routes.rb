@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :products do
     resources :comments
   end
-  resources :orders, only: [:index, :show, :new, :create, :destroy]
+  resources :orders, only: [:index, :show, :create, :destroy]
 
   post 'static_pages/thank_you'
 
