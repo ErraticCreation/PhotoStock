@@ -14,6 +14,8 @@ gem 'cancancan'
 gem 'will_paginate'
 gem 'stripe'
 gem 'angularjs-rails'
+gem 'dalli'
+gem 'connection_pool'
 
 group :development, :test do
   gem 'brakeman', :require => false
