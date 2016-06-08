@@ -16,6 +16,7 @@ gem 'stripe'
 gem 'angularjs-rails'
 gem 'dalli'
 gem 'connection_pool'
+gem 'redis-rails'
 
 group :development, :test do
   gem 'brakeman', :require => false
