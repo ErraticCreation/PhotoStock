@@ -27,7 +27,7 @@ app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
       $scope.newOrder = '';
     });
   }
-  $scope.deleteOrder = function() {
+  $scope.deleteOrder = function(order) {
     models.orders.delete(order);
     $scope.orders.splice($scope.orders.indexOf(order), 1);
   }
