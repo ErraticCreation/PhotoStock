@@ -15,8 +15,6 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-# Set local Redis cache
-config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
 
 module Vagrant
   class Application < Rails::Application
@@ -34,5 +32,8 @@ module Vagrant
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Set local Redis cache
+    config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
   end
 end
