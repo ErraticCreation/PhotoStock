@@ -5,7 +5,7 @@ describe Product do
   # Create test data
   before do
     # Create a sample product
-    @product = Product.create!(name: "Sample Product", description: "This a product!", image_url: "cat01.jpg", color: "blue")
+    @product = Product.create!(name: "Sample Product", description: "This a product!", image_url: "cat01.jpg", color: "blue", price: 15)
     # Create a sample user
     @user = User.create!(first_name: "Example", last_name: "User", email: "example@example.com", password: "Password1", password_confirmation: "Password1")
     # Create sample comments

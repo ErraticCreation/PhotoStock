@@ -4,7 +4,7 @@ FactoryGirl.define do
   sequence(:first_name) { |n| "Sample#{n}" }
   sequence(:last_name) { |n| "User#{n}" }
 
-  factory :user do
+  factory :user, aliases: [:commenter] do
     first_name
     last_name
     email

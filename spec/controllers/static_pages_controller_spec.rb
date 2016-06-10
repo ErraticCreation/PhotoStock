@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 describe StaticPagesController, :type => :controller do
-  context "GET #index" do
+  context "GET #landing_page" do
 
     before do
-      get :index
+      get :landing_page
     end
 
     it "responds successfully with an HTTP 200 status code" do
@@ -12,8 +12,8 @@ describe StaticPagesController, :type => :controller do
       expect(response).to have_http_status(200)
     end
 
-    it "renders the index template" do
-      expect(response).to render_template("index")
+    it "renders the landing_page template" do
+      expect(response).to render_template("landing_page")
     end
 
   end
