@@ -14,11 +14,11 @@
 
     <div class="field">
       <%= f.label :name %><br>
-      <%= f.text_field :name, class:"form-control" %>
+      <%= f.text_field :name, class:"form-control", required: true %>
     </div>
     <div class="field">
       <%= f.label :description %><br>
-      <%= f.text_area :description, rows: "8",class: "form-control" %>
+      <%= f.text_area :description, rows: "8",class: "form-control", required: true %>
     </div>
     <div class="field">
       <%= f.label :image_url %><br>
@@ -30,7 +30,7 @@
     </div>
     <div class="field">
       <%= f.label :price %><br>
-      <%= f.number_field :price, class: "text-field form-control", step: 'any' %>
+      <%= f.number_field :price, class: "text-field form-control", step: 'any', pattern: '(^\d*\.?\d*[1-9]+\d*$)|(^[1-9]+\d*\.\d*$)' %>
     </div>
     <div class="actions">
       <%= f.submit "Submit", class: "btn btn-default" %>

@@ -5,12 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Product.create(:name => "Sample Product", :description => "Bacon ipsum dolor amet pork loin jerky veniam laborum nostrud eu.", :image_url => "cat05.jpg", :color => "red", :price => 55.44)
+Product.create(:name => "Grey and White Cat", :description => "This is an adorable grey and white cat, peering to the right.", :image_url => "cat05.jpg", :color => "grey/white", :price => 55.44)
 
-Product.create(:name => "Second Sample Product", :description => "Porchetta sunt deserunt proident, corned beef andouille bacon t-bone ground round frankfurter.", :image_url => "cat01.jpg", :color => "orange", :price => 23.74)
+Product.create(:name => "Blue-Eyed Orange Cat", :description => "This is an adorable orange cat with blue eyes.", :image_url => "cat01.jpg", :color => "orange", :price => 23.74)
 
-Product.create(:name => "Third Sample Product", :description => "Salami tail filet mignon exercitation nulla, est jowl culpa.", :image_url => "cat02.jpg", :color => "blue", :price => 12.98)
+Product.create(:name => "Orange and White Cat", :description => "This is an adorable orange and white tabby with green eyes.", :image_url => "cat02.jpg", :color => "orange/white", :price => 12.98)
 
-Product.create(:name => "Fourth Sample Product", :description => "Shoulder ut elit dolore. Deserunt sunt adipisicing, pastrami ea eu voluptate tri-tip boudin capicola elit nisi doner ribeye.", :image_url => "cat03.jpg", :color => "black", :price => 22.87)
+Product.create(:name => "Fluffy White Cat", :description => "This is an adorable fluffy white cat with blue eyes.", :image_url => "cat03.jpg", :color => "white", :price => 22.87)
 
-Product.create(:name => "Fifth Sample Product", :description => "Swine beef ex, alcatra do jerky ham hock pancetta. Frankfurter salami chuck picanha aute enim landjaeger pork tongue beef ribs consectetur.", :image_url => "cat04.jpg", :color => "gray", :price => 5.87)
+Product.create(:name => "Blue-Eyed Gray Cat", :description => "This is an adorable grey cat with blue eyes.", :image_url => "cat04.jpg", :color => "grey", :price => 5.87)

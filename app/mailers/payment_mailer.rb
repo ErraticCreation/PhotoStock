@@ -5,7 +5,7 @@ class PaymentMailer < ApplicationMailer
     @product = product
     @order = order
     @total = total
-    @appname = "Sample Store App"
+    @appname = "PhotoStock"
 
     mail( :to  => email,
           :from => 'noreply@sample-store-app-tsn.herokuapp.com',

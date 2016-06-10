@@ -1,7 +1,7 @@
-<% provide(:title, "Products") %>
+<% provide(:title, "Photos") %>
 <div class="container-fluid products-box text-center">
   <header class="page-header">
-    <h1 class="text-center">Available Products</h1>
+    <h1 class="text-center">Available Photos</h1>
   </header>
   <% cache(cache_key_for_products) do %>
       <%= render @products %>

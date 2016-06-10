@@ -9,9 +9,9 @@ class ProductsController < ApplicationController
     if params[:q]
       search_term = params[:q]
       if Rails.env.development?
-        @products = Product.where("name LIKE ?", "%#{search_term}%").paginate(:page => params[:page], :per_page => 5)
+        @products = Product.where("name LIKE ?", "%#{search_term}%").paginate(:page => params[:page], :per_page => 8)
       elsif Rails.env.production?
-        @products = Product.where("name ILIKE ?", "%#{search_term}%").paginate(:page => params[:page], :per_page => 5)
+        @products = Product.where("name ILIKE ?", "%#{search_term}%").paginate(:page => params[:page], :per_page => 8)
       end
     else
       @products = Product.paginate(:page => params[:page], :per_page => 5)
