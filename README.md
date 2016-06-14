@@ -12,12 +12,13 @@ My name is Tyler Nixon, and this is my complete Rails web store.
 - [x] Functional Product Listing and Showcase, Complete With Comments and Raty Rating System
 - [x] Stripe Payment Implementation
 - [x] Devise Authentication and CanCanCan Authorisation Implementations
-- [x] Basic Orders Management via Angular (Soon to be converted into or replaced with a fully functioning shopping cart)
+- [x] Basic Orders Management via Angular
 - [x] Optimized performance via caching strategy
 
 ### In Progress/To Do:
 
 - [ ] Built a fully functioning Shopping Cart
+- [ ] Implemented Current and Completed Orders Viewing Functionality for Users
 - [ ] Updated styling to better showcase Photos
 - [ ] Implemented Photo Uploads as part of product creation
 - [ ] Implemented Administrative Dashboard

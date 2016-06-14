@@ -3,9 +3,9 @@
   <header class="page-header">
     <h1 class="text-center">Available Photos</h1>
   </header>
-  <% cache(cache_key_for_products) do %>
+
       <%= render @products %>
-  <% end %>
+
   <% if signed_in? && current_user.admin? %>
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <%= link_to 'New Product', new_product_path %>
