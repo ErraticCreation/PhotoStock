@@ -1,6 +1,6 @@
 # PhotoStock
 
-My name is Tyler Nixon, and this is my complete Rails web store.
+My name is Tarah Nixon, and this is my complete Rails web store.
 
 ####This project was created as part of an assignment from the CareerFoundy curriculum with the purpose of allowing me to showcase my skills as a web developer!
 
